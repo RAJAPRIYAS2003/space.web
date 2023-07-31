@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:white;
+    --secondary-color:rgb(180, 178, 178);
+    --third-color:rgb(126, 117, 117);
+    --ff-serif: "Bellefair", serif;
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    --ff-sans-normal: "Barlow", sans-serif;
+    --font-family:"--ff-serif";
+}
+body{
+    background-image:linear-gradient(rgba(14, 42, 201, 0.20),rgba(0,0,0,0.20)),url(images/pexels-photo-998641.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .logo{
+    padding: 70px;
+}
+.navbar .logo::before{
+    content: '';
+    position:absolute;
+    width: 580px;
+    height: 1px;
+    left:12%;
+    top: 13%;
+    background-color:var(--third-color);
+
+}
+.navbar img{
+    width:60px;
+}
+.navlinks{
+    display: flex;
+    padding-right: 40px;
+    background: linear-gradient(135deg,rgba(255,255,255,0.0),rgba(255,255,255,0.1));
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(0px);
+    height: 110px;
+    margin-top: 50px;
+    padding-right: 80px;
+    padding-left: 30px;
+}
+.navbar li{
+    list-style-type: none;
+    padding-left: 60px;
+    padding-top: 45px;
+}
+.navlinks span{
+    padding-right: 15px;
+    font-weight:900;
+}
+.navbar li a{
+    text-decoration: none;
+    color:var(--primary-color);
+    font-size: 20px;
+    letter-spacing: 2.6px;
+    font-weight: 100;
+    position: relative;    
+}
+.navlinks .active a::after{
+    background:var(--primary-color);
+    height: 4px;
+    width: 100%;
+}
+.navbar li a::after{
+    content: '';
+    background: rgb(145, 141, 141);
+    position: absolute;
+    height: 4px;
+    width: 0;
+    bottom: -43px;
+    left:0;
+}
+.navbar li a:hover::after{
+    width: 100%;
+    height: 3px;
+}
+section{
+    display: flex;
+    color:var(--primary-color);
+    justify-content: space-evenly;
+    margin-top: 60px;
+    padding: 0 10%;
+}
+section h3{
+    font-size: 25px;
+    padding-left: 45px;
+    letter-spacing: 2.7px;
+    font-weight: 100;
+}
+section span{
+    color: rgb(131, 128, 128);
+    font-weight: 900;
+    font-size: 30px;
+}
+section img{
+    width: 500px;
+    padding-top: 30px;
+}
+section .content{
+    width: 500px;
+    margin-top: 70px;
+}
+.content .types{
+display: flex;
+}
+.types li{
+    list-style-type: none;
+}
+.types .active a{
+    color:var(--primary-color);
+}
+.types .active a::after{
+    content: '';
+    background:var(--primary-color);
+    height: 3px;
+    width: 70px;
+}
+.types li a{
+    text-decoration: none;
+    padding-right:  30px;
+    color:var(--secondary-color);
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+.types li a::after{
+    content: '';
+    left:0;
+    right: 0;
+    height: 3px;
+    width: 0;
+    background:var(--primary-color);
+    position: absolute;
+    bottom: -15px;
+}
+.types li a:hover::after{
+    width: 80px;
+    height: 3px;
+}
+.content h1{
+    padding-top: 40px;
+    font-size: 110px;
+    letter-spacing:17px;
+    font-weight:lighter;
+    font-family:"Bellafair",serif;
+}
+.content p{
+    padding-top: 20px;
+    font-size: 22px;
+    letter-spacing: 0.9px;
+    line-height: 30px;
+    word-spacing:5px;
+    position: relative;
+    width: 600px;
+}
+.content p::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    width: 600px;
+    height: 1px;
+    background-color: grey;
+}
+
+.para1{
+    display: flex;
+    padding-top: 50px;
+    text-align: center;
+}
+.content1{
+    padding-top: 70px;
+    display: flex;
+}
+.content1 .para{
+    padding-right: 60px;
+}
+.content1 h4{
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color:var(--third-color);
+}
+.para h2{
+    font-size: 30px;
+    padding-top: 10px;
+    font-weight: 200;
+    letter-spacing: 4px;
+}

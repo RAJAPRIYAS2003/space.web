@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:white;
+    --secondary-color:rgb(180, 178, 178);
+    --third-color:rgb(126, 117, 117);
+    --ff-serif: "Bellefair", serif;
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    --ff-sans-normal: "Barlow", sans-serif;
+    --font-family:"--ff-serif";
+}
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/4QyIoZO.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+
+}
+.navbar .logo{
+    padding: 70px;
+    
+}
+.navbar .logo::before{
+    content: '';
+    position:absolute;
+    width: 550px;
+    height: 1px;
+    left:12%;
+    top: 13%;
+    background-color: rgb(92, 89, 89);
+
+}
+.navbar img{
+    width:60px;
+}
+.navlinks{
+    display: flex;
+    padding-right: 40px;
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(0px);
+    height: 110px;
+    margin-top: 50px;
+    padding-right: 80px;
+    padding-left: 30px;
+}
+.navbar li{
+    list-style-type: none;
+    padding-left: 60px;
+    padding-top: 45px;
+   
+}
+.navlinks span{
+    padding-right: 15px;
+    font-weight:900;
+}
+.navbar li a{
+    font-family: var(--ff-sans-normal);
+    text-decoration: none;
+    color:var(--primary-color);
+    font-size: 18px;
+    letter-spacing: 2.6px;
+    font-weight: 100;
+    position: relative;    
+}
+.navlinks .active a::after{
+    background:var(--primary-color);
+    height: 4px;
+    width: 100%;
+}
+.navbar li a::after{
+    content: '';
+    background: rgb(145, 141, 141);
+    position: absolute;
+    height: 4px;
+    width: 0;
+    bottom: -40px;
+    left:0;
+}
+.navbar li a:hover::after{
+    width: 100%;
+    height: 3px;
+}
+section{
+    display: flex;
+    color:var(--primary-color);
+    margin: 50px 100px;
+}
+.content h3{
+    font-size:30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    letter-spacing: 7px;
+}
+.content span{
+    padding-right: 30px;
+    color: rgb(112, 111, 111);
+    font-weight: 900;
+    letter-spacing:0px;
+}
+.content h2{
+    font-family: var(--ff-sans-normal);
+    font-size: 40px;
+    padding-top: 200px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: rgb(100, 99, 99);
+}
+.content h1{
+    font-size: 60px;
+    letter-spacing: 4px;
+    padding-top: 30px;
+    font-weight: 200;
+}
+.content p{
+    font-family: var(--ff-sans-normal);
+    font-size: 25px;
+    padding-top: 20px;
+    font-weight: 0;
+    letter-spacing: 1px;
+    line-height: 40px;
+    width: 800px;
+}
